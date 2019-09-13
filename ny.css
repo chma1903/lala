@@ -1,0 +1,192 @@
+
+body{
+margin:0;
+    background-image: url("images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+ }
+ 
+ 
+ 
+ 
+ /*startsida*/
+ .grid-container{
+     
+     display: grid;
+     min-height: 100vh;
+     position: relative;
+     grid-template-areas:
+     "header header header"
+    'menu    main   right '
+    'footer footer footer ';
+  
+   
+ }
+ 
+ .pa-header{
+    grid-area: header;
+    text-align: center;
+    background-color: #9933cc;
+    color:white;
+    height: 110px;
+    
+ 
+ }
+ 
+ .pa-menu{
+     grid-area: menu;
+     margin-right: 50px;
+     
+ }
+ 
+ 
+ .pa-menu ul {
+    
+     list-style-type: none;
+      text-align: center;
+     
+      
+   }
+ 
+ .pa-menu li {
+     padding: 5px 130px;
+     
+     margin-bottom: 7px;
+     background-color: #fc1111;
+     
+   }
+
+.pa-menu a {
+    color: white;
+    
+}
+ 
+ .pa-menu a:hover{
+       background-color:white;
+       color: black;
+     
+ }
+   
+ .pa-main h1{
+     text-align: center;
+ }
+ 
+ .pa-main{
+     grid-area:main;
+     text-align: justify;
+     margin: 20px;
+ }
+ 
+
+ .startsida-picture{
+     width: 100%;
+     height: auto;
+ 
+ }
+ 
+ .pa-right{
+    
+     grid-area: right;
+     margin:60px;
+     text-align: center;
+ }
+
+
+ 
+ .pa-footer{
+     grid-area: footer;
+     text-align: center;
+     height: 70px;
+     background-color:green;
+     position: absolute;
+     bottom: 0%;
+     width: 100%;
+     
+ }
+ 
+ 
+
+ /*values sida*/
+ .HSL-bild{
+     width: 100%;
+     height: auto;
+ }
+
+ .exempel-bild{
+    width: 100%;
+    height: auto;
+}
+
+.pa-right ul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+}
+
+
+
+/*använding*/
+.pa-länk{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.an-main{
+    grid-area:main;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+
+/* för enheter som är under 768px;*/
+
+
+ 
+ @media screen and (max-width: 768px){
+         
+         .grid-container{
+           grid-template-areas: 
+             "header"
+             "menu"
+             "main"
+             "right"
+             "footer"
+         }
+          
+          .pa-right
+          {
+              margin-bottom: 100px;
+              
+         }
+         .pa-main{
+             margin: 50px;
+         }
+         
+         .an-main
+         {
+        
+             margin-top: 100px;
+             margin-bottom: 250px;
+             
+        }
+        }
+         
+
+ /* för anheter som är 1024px;*/
+ 
+ @media screen and (width: 1024px){
+    
+  
+    .pa-menu li {
+     padding: 5px 20px;
+     font-size: 20px;
+    }
+
+    
+    
+}
